@@ -38,7 +38,7 @@ public class AD_EjercicioFicheros1 {
                 }
                 notaMedia /= 3;
                 resultado = "La nota de "+lista[0]+" es "+notaMedia+"\n";
-                System.out.println(resultado);
+                System.out.print(resultado);
                 salida.write(resultado);
                 
                 linea = entrada.readLine();
