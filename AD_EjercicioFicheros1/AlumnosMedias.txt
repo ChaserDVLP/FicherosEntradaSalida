@@ -1,0 +1,4 @@
+La nota de pepe es 4
+La nota de ana es 7
+La nota de luisa es 9
+La nota de diego es 4
