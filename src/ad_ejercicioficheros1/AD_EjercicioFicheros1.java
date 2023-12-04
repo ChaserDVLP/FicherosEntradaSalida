@@ -25,13 +25,18 @@ public class AD_EjercicioFicheros1 {
         BufferedWriter salida = null;
         
         try {
+            //Generamos los buffer de escritura y lectura
             entrada = new BufferedReader(new FileReader("alumnosNotas.txt"));
             salida = new BufferedWriter(new FileWriter("AlumnosMedias.txt"));
+            
+            //Leemos la primera linea
             linea = entrada.readLine();
             while (linea != null) {
                 int notaMedia = 0;
+                //Dividimos la linea en partes usando ':' como separador
                 lista = linea.split(":");
                 
+                //Recorremos la lista de elementos
                 for (int i = 1; i < lista.length; i++) {
                     int nota = Integer.parseInt(lista[i]);
                     notaMedia += nota;
@@ -41,6 +46,7 @@ public class AD_EjercicioFicheros1 {
                 System.out.print(resultado);
                 salida.write(resultado);
                 
+                //Leemos la siguiente línea
                 linea = entrada.readLine();
 
             }
